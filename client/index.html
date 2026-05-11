@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Itinerary Planner - Plan Your Dream Trip</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-plane-departure"></i>
+                <span>AI Trip</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#planner" class="nav-link">Plan Now</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="loginBtn" class="btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">AI-Powered</span> 
+                Dream Trip Planner
+            </h1>
+            <p class="hero-subtitle">
+                Create perfect itineraries in seconds. Personalized trips with 
+                <strong>budget tracking</strong>, <strong>local secrets</strong> & 
+                <strong>smart suggestions</strong> powered by AI.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+                <a href="#planner" class="btn-primary btn-large">
+                    <i class="fas fa-magic"></i>
+                    Plan My Trip Free
+                </a>
+                <a href="#features" class="btn-secondary btn-large">
+                    <i class="fas fa-star"></i>
+                    See Features
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Happy Travelers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Image/Animation -->
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <div class="card-float paris">
+                    <i class="fas fa-landmark"></i>
+                    <span>Paris</span>
+                </div>
+                <div class="card-float tokyo">
+                    <i class="fas fa-mountain"></i>
+                    <span>Tokyo</span>
+                </div>
+                <div class="card-float dubai">
+                    <i class="fas fa-building"></i>
+                    <span>Dubai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose AI Trip Planner?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Smart Planning</h3>
+                    <p>Advanced AI creates personalized itineraries with optimal routes, timings & budget management.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Budget Tracking</h3>
+                    <p>Real-time ₹ budget breakdown. Never overspend on your dream vacation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Optimized</h3>
+                    <p>Smart scheduling avoids rush. Perfect balance of adventure, food & relaxation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Ready</h3>
+                    <p>Access your itinerary anywhere. Offline maps & real-time updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Enter Details</h3>
+                    <p>Tell us destination, dates, budget & preferences</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>AI Magic ✨</h3>
+                    <p>Our AI creates perfect itinerary in 30 seconds</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Travel Happy</h3>
+                    <p>Download, share & enjoy stress-free vacation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== PRICING SECTION ===== -->
+<section id="pricing" class="pricing">
+    <div class="container">
+        <h2 class="section-title">Simple Pricing</h2>
+        <p class="section-subtitle"></p>
+        
+        <div class="pricing-grid">
+            <!-- Free Plan -->
+            <div class="pricing-card popular">
+                <div class="plan-header">
+                    <h3>FREE</h3>
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount">0</span>
+                        <span class="period">/trip</span>
+                    </div>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> 3 trips/month</li>
+                    <li><i class="fas fa-check"></i> Basic AI planning</li>
+                    <li><i class="fas fa-check"></i> PDF download</li>
+                    <li><i class="fas fa-times"></i> Priority support</li>
+                </ul>
+                <button class="btn-primary btn-full">Get Started Free</button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="pricing-card popular">
+                <div class="plan-badge">Most Popular</div>
+                <div class="plan-header">
+                    <h3>PRO</h3>
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount">199</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <span class="save">Save 40%</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Unlimited trips</li>
+                    <li><i class="fas fa-check"></i> Advanced AI features</li>
+                    <li><i class="fas fa-check"></i> Priority support</li>
+                    <li><i class="fas fa-check"></i> Flight suggestions</li>
+                    <li><i class="fas fa-check"></i> Hotel recommendations</li>
+                </ul>
+                <button class="btn-primary btn-full">Get Pro Now</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <div class="plan-header">
+                    <h3>ENTERPRISE</h3>
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount">999</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Everything in Pro</li>
+                    <li><i class="fas fa-check"></i> Team accounts</li>
+                    <li><i class="fas fa-check"></i> White label</li>
+                    <li><i class="fas fa-check"></i> API access</li>
+                    <li><i class="fas fa-check"></i> Dedicated support</li>
+                </ul>
+                <button class="btn-secondary btn-full">Contact Sales</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ===== POPULAR DESTINATIONS (NEW SECTION) ===== -->
+<section id="destinations" class="destinations">
+    <div class="container">
+        <h2 class="section-title">Popular Destinations</h2>
+        
+        <!-- Filter Navbar -->
+        <div class="filter-nav">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-globe"></i> All
+            </button>
+            <button class="filter-btn" data-filter="beach">
+                <i class="fas fa-umbrella-beach"></i> Beach
+            </button>
+            <button class="filter-btn" data-filter="adventure">
+                <i class="fas fa-mountain"></i> Adventure
+            </button>
+            <button class="filter-btn" data-filter="culture">
+                <i class="fas fa-landmark"></i> Culture
+            </button>
+            <button class="filter-btn" data-filter="food">
+                <i class="fas fa-utensils"></i> Food
+            </button>
+        </div>
+
+        <!-- Destinations Grid with REAL Images -->
+<div class="destinations-grid" id="destinationsGrid">
+    <div class="destination-card" data-tags="beach,relax">
+        <div class="card-image goa-image">
+            <div class="card-overlay">
+                <div class="card-tags">
+                    <span class="tag beach">Beach</span>
+                    <span class="tag relax">Relax</span>
+                </div>
+                <button class="plan-btn" data-dest="Goa">
+                    <i class="fas fa-plane"></i> Plan Goa Trip
+                </button>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3>Goa</h3>
+            <p>Golden beaches, beach shacks & Portuguese heritage</p>
+            <div class="card-meta">
+                <span class="price">₹25,000 <small>per person</small></span>
+                <span class="duration">4-6 days</span>
+                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-card" data-tags="adventure,himalaya">
+        <div class="card-image manali-image">
+            <div class="card-overlay">
+                <div class="card-tags">
+                    <span class="tag adventure">Adventure</span>
+                    <span class="tag himalaya">Himalaya</span>
+                </div>
+                <button class="plan-btn" data-dest="Manali">
+                    <i class="fas fa-plane"></i> Plan Manali Trip
+                </button>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3>Manali</h3>
+            <p>Snowy mountains, Rohtang Pass & adventure sports</p>
+            <div class="card-meta">
+                <span class="price">₹35,000 <small>per person</small></span>
+                <span class="duration">5-7 days</span>
+                <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-card" data-tags="culture,history">
+        <div class="card-image jaipur-image">
+            <div class="card-overlay">
+                <div class="card-tags">
+                    <span class="tag culture">Culture</span>
+                    <span class="tag history">History</span>
+                </div>
+                <button class="plan-btn" data-dest="Jaipur">
+                    <i class="fas fa-plane"></i> Plan Jaipur Trip
+                </button>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3>Jaipur</h3>
+            <p>Royal palaces, Amber Fort & colorful markets</p>
+            <div class="card-meta">
+                <span class="price">₹28,000 <small>per person</small></span>
+                <span class="duration">4-5 days</span>
+                <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-card" data-tags="beach,adventure">
+        <div class="card-image andaman-image">
+            <div class="card-overlay">
+                <div class="card-tags">
+                    <span class="tag beach">Beach</span>
+                    <span class="tag adventure">Adventure</span>
+                </div>
+                <button class="plan-btn" data-dest="Andaman">
+                    <i class="fas fa-plane"></i> Plan Andaman Trip
+                </button>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3>Andaman Islands</h3>
+            <p>Crystal clear waters, scuba diving & white sand beaches</p>
+            <div class="card-meta">
+                <span class="price">₹45,000 <small>per person</small></span>
+                <span class="duration">6-8 days</span>
+                <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-card" data-tags="food,culture">
+        <div class="card-image mumbai-image">
+            <div class="card-overlay">
+                <div class="card-tags">
+                    <span class="tag food">Food</span>
+                    <span class="tag culture">Culture</span>
+                </div>
+                <button class="plan-btn" data-dest="Mumbai">
+                    <i class="fas fa-plane"></i> Plan Mumbai Trip
+                </button>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3>Mumbai</h3>
+            <p>Street food heaven, Marine Drive & Bollywood tours</p>
+            <div class="card-meta">
+                <span class="price">₹22,000 <small>per person</small></span>
+                <span class="duration">3-5 days</span>
+                <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-card" data-tags="adventure,wildlife">
+        <div class="card-image ranthambore-image">
+            <div class="card-overlay">
+                <div class="card-tags">
+                    <span class="tag adventure">Adventure</span>
+                    <span class="tag wildlife">Wildlife</span>
+                </div>
+                <button class="plan-btn" data-dest="Ranthambore">
+                    <i class="fas fa-plane"></i> Plan Ranthambore Trip
+                </button>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3>Ranthambore</h3>
+            <p>Tiger safaris, jungle stays & wildlife photography</p>
+            <div class="card-meta">
+                <span class="price">₹32,000 <small>per person</small></span>
+                <span class="duration">4-6 days</span>
+                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ===== PLANNER FORM - COMPLETE & WORKING ===== -->
+<section id="planner" class="planner-section">
+    <div class="container">
+        <div class="section-header">
+            <a href="#home" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Explore Destinations
+            </a>
+            <h1>Create Your Perfect Trip</h1>
+        </div>
+        
+        <div class="planner-container">
+            <form id="tripPlannerForm" class="trip-form">
+                <!-- Row 1 -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt"></i> Destination</label>
+                        <input type="text" id="destination" placeholder="e.g., Goa, Manali, Paris" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-rupee-sign"></i> Budget (₹)</label>
+                        <input type="number" id="budget" placeholder="50000" min="10000" step="5000" required>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> Start Date</label>
+                        <input type="date" id="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-check"></i> End Date</label>
+                        <input type="date" id="endDate" required>
+                    </div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-users"></i> Travelers</label>
+                        <input type="number" id="travelerCount" value="2" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-user-tag"></i> Type</label>
+                        <select id="travelerType" required>
+                            <option value="couple">Couple</option>
+                            <option value="family">Family</option>
+                            <option value="friends">Friends</option>
+                            <option value="solo">Solo</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Preferences -->
+                <div class="form-group full-width">
+                    <label><i class="fas fa-heart"></i> Interests (optional)</label>
+                    <input type="text" id="interests" placeholder="beach, adventure, foodie, culture...">
+                    <div id="interestTags" class="interest-tags"></div>
+                </div>
+                
+                <!-- Submit -->
+                <button type="submit" class="btn-generate">
+                    <i class="fas fa-sparkles"></i>
+                    Generate AI Itinerary
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+    
+ <!-- ===== FOOTER ===== -->
+<footer class="footer">
+        <div class="container">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>AI Trip</span>
+                </div>
+                <p>AI-Powered travel planning made simple. Create perfect itineraries in seconds.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="features">Features</a></li>
+                    <li><a href="#" data-page="pricing">Pricing</a></li>
+                    <li><a href="#" data-page="planner">Plan Trip</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <p>Get travel tips & exclusive deals</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="your@email.com">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <div class="app-stores">
+                    <a href="#" class="app-store">📱 App Store</a>
+                    <a href="#" class="play-store">📲 Play Store</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <p>&copy; 2024 AI Trip. All rights reserved. Made with ❤️ in India</p>
+            </div>
+            <div class="footer-right">
+                <img src="https://img.shields.io/badge/Powered%20by-OpenAI-10b981?style=flat&logo=openai&logoColor=white" alt="OpenAI" class="shield">
+                <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" class="shield">
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+    <!-- ===== LOGIN/SIGNUP MODAL ===== -->
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        
+        <!-- Tabs -->
+        <div class="auth-tabs">
+            <button class="tab-btn active" data-tab="login">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+            <button class="tab-btn" data-tab="signup">
+                <i class="fas fa-user-plus"></i> Sign Up
+            </button>
+        </div>
+
+        <!-- Login Tab -->
+        <div id="loginTab" class="tab-content active">
+            <h3><i class="fas fa-sign-in-alt"></i> Welcome Back!</h3>
+            <p class="tab-subtitle">Login to access your saved trips</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <label class="checkbox-group">
+                    <input type="checkbox" id="rememberMe">
+                    <span class="checkmark"></span>
+                    Remember me
+                </label>
+                <button type="submit" class="btn-primary btn-full">Login</button>
+            </form>
+            <div class="divider">
+                <span>or</span>
+            </div>
+            <button class="btn-google">
+                <i class="fab fa-google"></i>
+                Continue with Google
+            </button>
+        </div>
+
+        <!-- Signup Tab -->
+        <div id="signupTab" class="tab-content">
+            <h3><i class="fas fa-user-plus"></i> Create Account</h3>
+            <p class="tab-subtitle">Join 10K+ travelers planning with AI</p>
+            <form id="signupForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" placeholder="Phone (optional)">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <label class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <span class="checkmark"></span>
+                    I agree to Terms & Privacy Policy
+                </label>
+                <button type="submit" class="btn-primary btn-full">Create Account</button>
+            </form>
+            <div class="divider">
+                <span>or</span>
+            </div>
+            <button class="btn-google">
+                <i class="fab fa-google"></i>
+                Sign up with Google
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
